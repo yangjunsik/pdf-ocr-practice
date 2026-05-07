@@ -20,10 +20,9 @@ public class BasicTesseractCliExample {
 
         //ProcessBuilder => JAVA에서 외부 프로그램을 실행하는 객체
         //inheritIO =>
-        //tesseract가 터미널에 출력하는 내용
-        //tesseract가 터미널에 에러로 출력하는 내용
-        //tesseract가 터미널 입력을 받는 방식
-        //이런 것들을 터미널에서 직접 실행한 것처럼 로그를 볼수 있다
+        //tesseract 출력이 Java 콘솔로 바로 감
+        //내 코드가 출력 내용을 따로 읽지 않음
+        //공부/디버깅용으로 편함
         Process process = new ProcessBuilder(
                 "tesseract",
                 imagePath.toString(),
